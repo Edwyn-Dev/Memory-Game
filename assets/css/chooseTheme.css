@@ -1,0 +1,154 @@
+@font-face {
+    font-family: 'IndieFlowers';
+    src: url('../fonts/custom/IndieFlowers.ttf');
+}
+
+* {
+    font-family: 'IndieFlowers';
+    transition: all 0.3s;
+    text-align: center;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #7f6e60;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+#main-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+#display-choice {
+    display: none;
+    width: 40%;
+    height: 100%;
+    padding: 40px;
+    box-sizing: border-box;
+    margin-top: 130px;
+}
+
+#display-choice-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4ebe3;
+    padding-bottom: 40px;
+    padding-top: 0px;
+    border-radius: 5px;
+}
+
+#display-choice-content h1 {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+#display-choice-content ul li {
+    text-align: left;
+}
+
+#choose-choice {
+    width: 55%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+#choose-choice-title,
+#choose-choice-button {
+    color: #f4ebe3;
+    width: 100%;
+    font-size: 25px;
+}
+
+#choose-choice-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-grow: 1;
+    gap: 40px;
+}
+
+.button {
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    background-color: #f4ebe3;
+    padding: 10px;
+    border: none;
+    font-size: 25px;
+    color: #7f6e60;
+    font-weight: bolder;
+}
+
+.buttonStart {
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    background-color: #7f6e60;
+    padding: 10px;
+    border: none;
+    font-size: 25px;
+    color: #f4ebe3;
+    font-weight: bolder;
+}
+
+.button:hover,
+.buttonStart:hover {
+    transform: translateY(-10px);
+}
+
+#display-choice-title {
+    color: #f4ebe3;
+}
+
+@media (max-width: 768px) {
+    #display-choice {
+        width: 90%;
+        padding: 20px;
+    }
+
+    #choose-choice {
+        width: 90%;
+        padding: 20px;
+    }
+
+    #choose-choice-title,
+    #choose-choice-button {
+        font-size: 20px;
+    }
+
+    .button, .buttonStart {
+        font-size: 20px;
+    }
+
+    #display-choice-title h3 {
+        font-size: 1.2rem;
+    }
+
+    #display-choice-content h1 {
+        font-size: 1.5rem;
+    }
+
+    #display-choice-content ul {
+        font-size: 1rem;
+    }
+}
