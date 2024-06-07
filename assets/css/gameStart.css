@@ -7,8 +7,8 @@
     font-family: 'IndieFlowers';
     transition: all 0.3s;
     text-align: center;
+    box-sizing: border-box;
 }
-
 
 body {
     margin: 0;

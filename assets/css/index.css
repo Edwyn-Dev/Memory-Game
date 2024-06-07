@@ -7,6 +7,7 @@
     font-family: 'IndieFlowers';
     transition: all 0.3s;
     text-align: center;
+    box-sizing: border-box;
 }
 
 body {
@@ -27,8 +28,6 @@ main {
 }
 
 #main-container {
-    margin: 0;
-    padding: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -36,12 +35,17 @@ main {
     gap: 50px;
 }
 
+#info-div-title {
+    color: #f4ebe3;
+    font-size: 3rem;
+    cursor: default;
+}
+
 #difficulty-list {
     display: flex;
     flex-direction: row;
     gap: 30px;
-    width: max-content;
-    background-color: rgb(82, 65, 52);
+    background-color: #524134;
     border-radius: 10px;
     padding: 5px;
 }
@@ -66,33 +70,22 @@ main {
     transform: rotate(10deg);
 }
 
-#moyen {
-    background-color: rgb(202, 100, 0, 0.5);
+#medium {
+    background-color: rgba(202, 100, 0, 0.5);
 }
 
-#moyen:hover {
+#medium:hover {
     background-color: rgb(202, 100, 0);
     transform: rotate(10deg);
 }
 
 #hard {
-    background-color: rgb(202, 0, 0, 0.5);
+    background-color: rgba(202, 0, 0, 0.5);
 }
 
 #hard:hover {
     background-color: rgb(202, 0, 0);
     transform: rotate(10deg);
-}
-
-#info-div {
-    display: flex;
-    flex-direction: column;
-}
-
-#info-div-title {
-    color: #f4ebe3;
-    font-size: 3rem;
-    cursor: default;
 }
 
 #container-info-difficulty {
@@ -114,16 +107,16 @@ main {
 
 #title-easy:hover {
     color: rgb(0, 202, 0);
-    transform: translateY(-10px)
+    transform: translateY(-10px);
 }
 
-#title-moyen {
+#title-medium {
     color: rgb(101, 50, 0);
 }
 
-#title-moyen:hover {
+#title-medium:hover {
     color: rgb(202, 100, 0);
-    transform: translateY(-10px)
+    transform: translateY(-10px);
 }
 
 #title-hard {
@@ -132,55 +125,52 @@ main {
 
 #title-hard:hover {
     color: rgb(202, 0, 0);
-    transform: translateY(-10px)
+    transform: translateY(-10px);
 }
 
-.infoDivDiffucltyDefault {
+.infoDivDifficultyDefault {
     display: flex;
     flex-direction: column;
-    background-color: #f4ebe3;
+    background-color: #524134;
     padding: 10px;
     border-radius: 20px;
     gap: 10px;
-    background-color: rgb(82, 65, 52);
 }
 
 span {
     font-weight: bolder;
     cursor: default;
+    color: #f4ebe3;
 }
 
 #default-easy {
     border-radius: 10px;
     padding: 5px;
     background-color: rgba(0, 202, 0, 0.5);
-    color: #f4ebe3;
 }
 
 #default-easy:hover {
     background-color: rgba(0, 202, 0);
 }
 
-#default-moyen {
+#default-medium {
     border-radius: 10px;
     padding: 5px;
-    background-color: rgb(202, 100, 0,0.5);
-    color: #f4ebe3;
+    background-color: rgba(202, 100, 0, 0.5);
 }
 
-#default-moyen:hover {
-    background-color: rgb(202, 100, 0);
+#default-medium:hover {
+    background-color: rgba(202, 100, 0);
 }
 
 #default-hard {
     border-radius: 10px;
     padding: 5px;
-    background-color: rgb(202, 0, 0,0.5);
-    color: #f4ebe3;
+    background-color: rgba(202, 0, 0, 0.5);
 }
 
 #default-hard:hover {
-    background-color: rgb(202, 0, 0);
+    background-color: rgba(202, 0, 0);
 }
 
 @media (max-width: 768px) {
@@ -208,4 +198,3 @@ span {
         font-size: 2.5rem;
     }
 }
-
